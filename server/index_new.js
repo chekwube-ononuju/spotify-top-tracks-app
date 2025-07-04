@@ -9,9 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 // Spotify OAuth Configuration
-const CLIENT_ID = process.env.CLIENT_ID || '434d02f3d9244dc9bbe87d4030c4e3f8';
-const CLIENT_SECRET = process.env.CLIENT_SECRET || 'acb1a76bcacb40f6a059f26b2bdaf2f1';
-const REDIRECT_URI = process.env.REDIRECT_URI || 'https://spotify-song-api.vercel.app/callback';
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const REDIRECT_URI = process.env.REDIRECT_URI;
 
 // Country code mapping for regional data
 const COUNTRY_CODES = {
@@ -72,8 +72,7 @@ app.get('/callback', async (req, res) => {
     );
 
     // Redirect to frontend with access token
-    const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
-    res.redirect(`${CLIENT_URL}/?access_token=${tokenResponse.data.access_token}`);
+    res.redirect(`${process.env.CLIENT_URL}/?access_token=${tokenResponse.data.access_token}`);
     
   } catch (error) {
     console.error('Token exchange error:', error.response?.data || error.message);
