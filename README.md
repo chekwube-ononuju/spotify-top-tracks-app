@@ -1,6 +1,13 @@
-# Spotify Top Tracks App
+# 🎵 Spotify Top Tracks App
 
 A full-stack web application that connects to your Spotify account to show your top 50 most listened songs from the beginning of the year to the current date, plus an interactive world map where you can explore popular music in different regions.
+
+## 🚀 Live Demo
+
+- **Frontend**: https://spotify-tracks-q4jue1pb0-chekwube-ononujus-projects.vercel.app
+- **Backend API**: https://spotify-song-dnrkn6km0-chekwube-ononujus-projects.vercel.app
+
+*Note: You'll need to log in with your Spotify account to see your personal data.*
 
 ## Features
 
@@ -9,6 +16,7 @@ A full-stack web application that connects to your Spotify account to show your 
 - 🌍 **Global Music Discovery**: Explore trending music across 20+ countries
 - 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 - 🎨 **Modern UI**: Beautiful Spotify-themed interface with smooth animations
+- 🔒 **Secure HTTPS**: Fully deployed with SSL encryption
 
 ## Screenshots
 
